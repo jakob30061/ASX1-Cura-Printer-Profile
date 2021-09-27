@@ -1,0 +1,9 @@
+
+printer-profiles/Artillery Sidewinder X2/Artillery Sidewinder X2 - fast (0.3mm).curaprofile
+printer-profiles/Artillery Sidewinder X2/Artillery Sidewinder X2 - value (0.2mm).curaprofile
+printer-profiles/Artillery Sidewinder X2/Artillery Sidewinder X2 - fine (0.1mm).curaprofile
+src/definitions/artillery_sidewinder_x2.def.json
+src/definitions/artillery_sidewinder_x2.def.json
+src/meshes/artillery_swx2.stl
+src/meshes/compressed/artillery_swx2.stl
+src/extruders/artillery_swx2_extruder_0.def.json

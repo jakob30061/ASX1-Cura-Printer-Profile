@@ -1,0 +1,52 @@
+{
+    "name": "Artillery Sidewinder X1 (v4)",
+    "version": 2,
+    "inherits": "artillery_base",
+    
+    "metadata": {
+        "visible": true,
+        "author": "jakob30061",
+        
+        "manufacturer": "Artillery",
+        "file_formats": "text/x-gcode",
+        "platform": "artillery_swx1.stl",
+        "platform_offset": [ 0, -100, -22],
+        
+        "quality_definition": "artillery_base",
+        
+        "has_materials": true,
+        "has_machine_quality": true,
+        "preferred_quality_type": "fine",
+        "supports_usb_connection": true,
+        "supports_network_connection": false,
+        
+        "machine_extruder_trains": {
+            "0": "artillery_swx1_extruder_0"
+        }
+    },
+
+    "overrides": {
+        "machine_name": { "default_value": "Artillery Sidewinder X1" },
+        "machine_start_gcode": { "default_value": " G28; all axis home (0|0|0)\n M117 Purge extruder\n G92 E0; reset extruder\n G1 Z1.0 F3000; move z a little up to prevent scratching the surface\n G1 X2 Y20 Z0.3 F5000.0; move to start-line position\n G1 X2 Y200.0 Z0.3 F1500.0 E15; draw 1st line\n G1 X2 Y200.0 Z0.4 F5000.0; move a little to the side\n G1 X2 Y20 Z0.4 F1500.0 E30; draw 2nd line\n G92 E0; reset extruder\n G1 Z1.0 F3000; move z a little up to prevent scratching the surface"},
+        "machine_end_gcode": { "default_value": "M104 S0; turn off extruder\n M140 S0; turn off heated bed\n G1 X0 Y200 F1000; prepare for part removal\n M84; disable motors\n M106 S0; turn off fan" },
+        
+        "machine_width": { "default_value": 300 },
+        "machine_depth": { "default_value": 300 },
+        "machine_height": { "default_value": 400 },
+        "machine_center_is_zero":{"default_value": false},
+        
+
+        "machine_heated_bed": {"default_value":true},
+        
+        "machine_head_with_fans_polygon": { "default_value": [
+                [-26, 34],
+                [-26, -32],
+                [32, -32],
+                [32, 34]
+            ]
+        },
+
+        "gantry_height": { "value": 25 }
+
+    }
+}
