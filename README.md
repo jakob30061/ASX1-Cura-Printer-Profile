@@ -9,7 +9,7 @@
 ### General Information
 Since ```Cura v4.8``` the Artillery Sidewinder X1 and Genius is supported by default.
 
-If you dont't like the 3D Model of the Artillery Sidewinder X1 shipped with Cura 4.8 and newer
+If you don't like the 3D Model of the Artillery Sidewinder X1 shipped with Cura 4.8 and newer
 you can copy a high-res 3D Model from ```src/meshes``` to ```C:\Program Files\Ultimaker Cura 4.7\resources\meshes```.
 
 
